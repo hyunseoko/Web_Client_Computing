@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+}
+.img {
+  justify-content: center;
+}
+#image-img {
+  width: 160px;
+  height: 120px;
+  transform: scale(1); /* 이미지 사이즈 고정 */
+}
+
+.기본정보 img {
+  margin-right: 20px;
+  width: 750px;
+  height: 500px;
+  transition: all 0.3s ease-in-out;
+}
+.rep img {
+  margin-right: 20px;
+  width: 280px;
+  height: 350px;
+  transition: all 0.3s ease-in-out;
+}
+.office img {
+  margin-right: 20px;
+  width: 350px;
+  height: 300px;
+  transition: all 0.3s ease-in-out;
+}
+.first img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 200px;
+  transition: all 0.3s ease-in-out;
+}
+.second img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 200px;
+  transition: all 0.3s ease-in-out;
+}
+.second video {
+  width: 450px;
+  height: 400px;
+  transition: all 0.3s ease-in-out;
+}
+.오시는길 img {
+  margin-right: 20px;
+  width: 380px;
+  height: 550px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*좌측 메뉴바*/
+.menu-bar {
+  position: fixed;
+  border: 0;
+  background-color: rgb(14,15,55);
+  display: block;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  float: left;
+  width: 13%;
+  height: 100%;
+}
+.index {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+/* 목차 */
+.index h3 {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 목차 각 항목 반응형 커서 */
+.index h3:hover {
+  color:rgba(94, 48, 155, 0.619);
+  font-size: 1.1em;
+  opacity: 1;
+  text-shadow: 0.7px 0.7px 0.7px #000;
+}
+
+/* 커서 올릴 시 이미지 크게 */
+.office img:hover {
+  transform: scale(1.7);
+  -webkit-transform: scale(1.7);
+  z-index: 1;
+  align-items: center;
+}
+.first img:hover {
+  transform: scale(1.7);
+  -webkit-transform: scale(1.7);
+  z-index: 1;
+  align-items: center;
+}
+.second img:hover {
+  transform: scale(1.7);
+  -webkit-transform: scale(1.7);
+  z-index: 1;
+  align-items: center;
+}
+
+
+/*섹션 설정*/
+section {
+  float: right;
+  width: 80%;
+  height: 100%;
+}
+
+/*폰트 설정*/
+.name {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Oswald', sans-serif;
+}
+
+.contacts {
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+}
+
+/*최상단 이동 버튼*/
+
+.goupbtn {
+  top: 90%;
+  left: 95%;
+  width: 50px;
+  height: 50px;
+  border-radius: 80%;
+  background-color: #ffffff;
+  border: rgb(14,15,55) 3px solid;
+  position: fixed;
+  z-index: 2;
+}
